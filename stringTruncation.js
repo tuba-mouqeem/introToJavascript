@@ -38,12 +38,12 @@ let content = `Truncate better if the message contains a single very
 
 
 
+const characterLimit = 150;
+function truncateString1(str, characterLimit) {
 
-function truncateString1(str, num) {
-    const characterLimit = 150;
     if (content.length > characterLimit)
         return content.slice(0, characterLimit - 3) + "..."
 }
 
-console.log(truncateString1(content, 2))
+console.log(truncateString1(content, characterLimit))
 
